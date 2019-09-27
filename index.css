@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: system-ui, BlinkMacSystemFont, Roboto, arial, sans-serif;
+    font-size: 12px;
+}
+
+h1#logo {
+    height: 92px;
+    width: 272px;
+    background: url("images/googlelogo_color_272x92dp.png") top left no-repeat;
+    background-size: 100%;
+    margin:  0 auto;
+}
+
+#mainContainer {
+    width: 580px;
+    margin: 150px auto 0;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 44px;
+    border: 1px solid rgba(223, 225, 229);
+    font-size: 26px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    max-width: 584px;
+    background-color: white;
+    margin: 25px 0 25px 0;
+    text-indent: 1.5em; 
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+input[type="submit"] {
+    background-color: rgba(242, 242, 242);
+    padding: 10px 15px;
+    font-size: 13px;
+    border: none;
+    color: rgba(85, 89, 93);
+    margin: 4px;
+    border-radius: 4px;
+}
+
+small {
+    display: block;
+    margin: 20px 0 0;
+    font-size: 12px
+}
+
+nav#header {
+    text-align: right;
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav#header ul li a:link,
+nav#header ul li a:visited {
+    color: #555;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-size: 13px;
+}
+
+nav#header ul li #signIn {
+    background-color: rgba(62, 129, 251);
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: white;
+}
+
+nav#header ul li a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(239, 239, 239);
+    padding: 12px 0;
+    width: 100%;
+}
+
+footer nav {
+    padding: 0 12px;
+}
+
+footer nav ul li {
+    padding: 0 12px;
+}
+
+footer nav ul li a{
+    color: rgba(85, 89, 93);
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer nav ul {
+    float: left;
+}
+
+footer nav ul#rightLinks {
+    float: right;
+}
+
