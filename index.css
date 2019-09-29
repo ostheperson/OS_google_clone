@@ -7,7 +7,7 @@ body {
     font-family: system-ui, BlinkMacSystemFont, Roboto, arial, sans-serif;
     font-size: 12px;
 }
-
+/*Google logo is a background image of a h1 block*/
 h1#logo {
     height: 92px;
     width: 272px;
@@ -15,7 +15,7 @@ h1#logo {
     background-size: 100%;
     margin:  0 auto;
 }
-
+/*the container for the center contents*/
 #mainContainer {
     width: 580px;
     margin: 150px auto 0;
@@ -23,7 +23,7 @@ h1#logo {
 }
 
 
-
+/*search box I added an ID { "searchBox"  }*/
 input[type="text"] {
     width: 100%;
     height: 44px;
@@ -37,20 +37,21 @@ input[type="text"] {
     text-indent: 1.5em; 
     transition: width .5s ease-in-out;
 }
-
+/*still refers to search box*/
 input[type="text"]:hover {
 	border-radius: 24px;
 	width: 584px;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 
 }
-
+/*still refers to search box*/
 input[type="text"]:focus {
 	border-radius: 24px;
 	width: 584px;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 
 }
+/*refers to google search button*/
 
 input[type="submit"] {
     background-color: rgba(242, 242, 242);
@@ -76,7 +77,7 @@ nav#header {
 nav ul li{
     display: inline;
 }
-
+/* this changes the appearance of link when visited and not visited */
 nav#header ul li a:link,
 nav#header ul li a:visited {
     color: #555;
@@ -85,14 +86,14 @@ nav#header ul li a:visited {
     color: black;
     font-size: 13px;
 }
-
+/* sign-in button*/
 nav#header ul li #signIn {
     background-color: rgba(62, 129, 251);
     padding: 5px 10px;
     border-radius: 2px;
     color: white;
 }
-
+/* underlines links on pointer hover */
 nav#header ul li a:hover {
     text-decoration: underline;
     color: #333;
