@@ -35,7 +35,7 @@ input[type="text"] {
     background-color: white;
     margin: 25px 0 25px 0;
     text-indent: 1.5em; 
-    transition: width .75s ease-in-out;
+    transition: width .5s ease-in-out;
 }
 
 input[type="text"]:hover {
