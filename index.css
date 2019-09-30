@@ -7,6 +7,14 @@ body {
     font-family: system-ui, BlinkMacSystemFont, Roboto, arial, sans-serif;
     font-size: 12px;
 }
+
+/* apps background icon*/
+#apps {
+     width: 30px;
+     background: url("images/app-icon.png") top left no-repeat;
+     background-size: 100%;
+     margin-right: 20px;
+}
 /*Google logo is a background image of a h1 block*/
 h1#logo {
     height: 92px;
@@ -21,7 +29,10 @@ h1#logo {
     margin: 150px auto 0;
     text-align: center;
 }
-
+/* search icon*/
+#search {
+    max-width: 25px;
+}
 
 /*search box I added an ID { "searchBox"  }*/
 input[type="text"] {
