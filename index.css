@@ -100,10 +100,16 @@ nav#header ul li a:hover {
 
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: -28px;
     background-color: rgba(239, 239, 239);
     padding: 12px 0;
     width: 100%;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+footer:hover, footer.slide {
+    transform: translateY(-28px);
 }
 
 footer nav {
