@@ -5,6 +5,8 @@
 	<meta charset="UTF-8" />
     <title>OS Google Clone</title>
     <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
     
 <body>
@@ -14,7 +16,7 @@
         <ul>
             <li><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
             <li><a href="https://www.google.com.ng/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-            <li><a href="https://www.google.com.ng/intl/en/about/products?tab=wh">Apps</a></li>
+            <li><a href="https://www.google.com.ng/intl/en/about/products?tab=wh"><img src="icons/app_svg.svg" alt="Apps"></a</li>
             <li><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" id="signIn">Sign in</a></li>
         </ul>
     </nav>
@@ -24,16 +26,19 @@
         
         <form>
             <!--Search box-->
-            <input type='text' id="searchBox"> <br/>
+            <div class="search-box">
+                <input type='text'><img id="search-icon" src="icons/search_svg.svg" alt="Apps">
+            </div>
             <!-- google search button-->
             <input type="submit" value="Google Search">
             <!--I'm Feeling Lucky button-->
             <input type="submit" value="I'm Feeling Lucky">
-        </form>
         
         <small>Google.ca offered in <a href="">Fran&ccedil;ais</a></small>
     </div>
     
+
+
 	<footer class="js-footer">
         <nav>
             <!-- unordered list of footer links -->
