@@ -102,7 +102,9 @@ nav#header ul li #signIn {
 }
 /* This is the sign in button change */
 #signIn:hover{
-    filter: brightness(180%);
+    filter: brightness(150%);
+    background-color: rgba(72, 133, 237, 0.865);
+    box-shadow: 1px 1px 10px 5px #4885ed;
 }
 
 
