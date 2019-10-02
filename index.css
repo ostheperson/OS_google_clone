@@ -81,6 +81,11 @@ nav ul {
     margin-right: -15px;
 }
 
+/* this changes the brightness of the app-icon on hover */
+.app-icon:hover {
+    filter: brightness(150%);
+}
+
 nav ul li{
     display: inline-block;
 }
