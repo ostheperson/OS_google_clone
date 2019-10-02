@@ -15,11 +15,19 @@ h1#logo {
     background-size: 100%;
     margin:  0 auto;
 }
+
 /*the container for the center contents*/
 #mainContainer {
     width: 580px;
     margin: 150px auto 0;
     text-align: center;
+}
+#hov{
+     width: 130px;
+     height: 35px;
+     background-color:black;
+     color: white;
+     
 }
 
 /*search box I added an ID { "searchBox"  }*/
@@ -79,6 +87,12 @@ nav ul {
 .app-icon {
     width: 45%;
     margin-right: -15px;
+    
+}
+
+.app-icon:hover {
+  filter: blur(0.5px) grayscale(5%);
+  opacity: 0.5;
 }
 
 nav ul li{
