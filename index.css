@@ -48,11 +48,11 @@ input[type="text"]:focus {
 /*refers to google search button*/
 
 input[type="submit"] {
-    background-color: rgba(242, 242, 242);
-    padding: 10px 15px;
+    background-color: rgba(24, 24, 24);
+    padding: 15px 20px;
     font-size: 13px;
     border: none;
-    color: rgba(85, 89, 93);
+    color: rgba(82, 89, 93);
     margin: 4px;
     border-radius: 4px;
     cursor: pointer;
