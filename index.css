@@ -79,6 +79,11 @@ nav ul {
 .app-icon {
     width: 45%;
     margin-right: -15px;
+    transition: all 150ms ease-in;
+}
+
+.app-icon:hover {
+    opacity: 0.65;
 }
 
 nav ul li{
