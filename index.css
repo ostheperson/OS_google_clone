@@ -22,7 +22,6 @@ h1#logo {
     text-align: center;
 }
 
-
 /*search box I added an ID { "searchBox"  }*/
 input[type="text"] {
     height: 44px;
@@ -66,12 +65,24 @@ small {
 }
 
 nav#header {
-    text-align: right;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-icon {
+    width: 45%;
+    margin-right: -15px;
 }
 
 nav ul li{
-    display: inline;
+    display: inline-block;
 }
 /* this changes the appearance of link when visited and not visited */
 nav#header ul li a:link,
