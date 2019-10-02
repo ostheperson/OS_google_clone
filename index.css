@@ -100,6 +100,12 @@ nav#header ul li #signIn {
     border-radius: 2px;
     color: white;
 }
+/* sign-in button hover*/
+nav#header ul li #signIn:hover {
+	background-color: rgba(90, 157, 279);
+	padding: 5px 10px;
+	border-radius: 2px;
+	color: white;}
 /* underlines links on pointer hover */
 nav#header ul li a:hover {
     text-decoration: underline;
