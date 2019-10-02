@@ -58,6 +58,15 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+input[value="Google Search"]:hover {
+	background-color: rgba(111,111,111,1.00);
+	
+}
+
+input[value="I'm Feeling Lucky"]:hover {
+	background-color: rgba(111,111,111,1.00);
+	
+}
 small {
     display: block;
     margin: 20px 0 0;
