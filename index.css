@@ -79,7 +79,12 @@ nav ul {
 .app-icon {
     width: 45%;
     margin-right: -15px;
+    transition: 0.15s;
 }
+/*this changes the opacity of icon with transition of 0.15s */
+.app-icon:hover {
+    opacity: 0.5;
+}	
 
 nav ul li{
     display: inline-block;
