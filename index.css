@@ -100,6 +100,14 @@ nav#header ul li #signIn {
     border-radius: 2px;
     color: white;
 }
+/* This is the sign in button change */
+#signIn:hover{
+    filter: brightness(115%);
+    background-color: rgba(72, 133, 237, 0.865);
+    box-shadow: 0 0 5px 1px #4884eb;
+}
+
+
 /* underlines links on pointer hover */
 nav#header ul li a:hover {
     text-decoration: underline;
