@@ -39,14 +39,16 @@ input[type="text"] {
 }
 /*still refers to search box*/
 input[type="text"]:hover {
-	width: 584px;
+    width: 584px;
+    outline: none;
 }
 /*still refers to search box*/
 input[type="text"]:focus {
-	width: 584px;
+    width: 584px;
+    outline: none;
 }
-/*refers to google search button*/
 
+/*refers to google search button*/
 input[type="submit"] {
     background-color: rgba(242, 242, 242);
     padding: 10px 15px;
@@ -56,6 +58,12 @@ input[type="submit"] {
     margin: 4px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+input[type="submit"]:hover { 
+    color: #222;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
 small {
