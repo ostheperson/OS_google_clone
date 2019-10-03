@@ -22,7 +22,7 @@ h1#logo {
     text-align: center;
 }
 
-/*search box I added an ID { "searchBox"  }*/
+/*search box I added an ID { "searchBox" }*/
 input[type="text"] {
     height: 44px;
     border: 1px solid rgba(223, 225, 229);
@@ -45,17 +45,28 @@ input[type="text"]:hover {
 input[type="text"]:focus {
 	width: 584px;
 }
+
+
 /*refers to google search button*/
 
 input[type="submit"] {
     background-color: rgba(242, 242, 242);
-    padding: 10px 15px;
+    padding: 10px 5px;
     font-size: 13px;
     border: none;
     color: rgba(85, 89, 93);
     margin: 4px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.googleicon{
+	background-color: rgba(242, 242, 242);
+	color: rgba(85, 89, 93);
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 10px 15px;
+	margin-left: 25px;
 }
 
 small {
@@ -79,12 +90,12 @@ nav ul {
 .app-icon {
     width: 45%;
     margin-right: -15px;
-    transition: 0.15s;
+    transition: 0.5s;
 }
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
-    opacity: 0.5;
-}	
+    opacity: 0.3;
+}
 
 nav ul li{
     display: inline-block;
@@ -158,3 +169,15 @@ footer nav ul#rightLinks {
     float: right;
 }
 
+/*
+.searchicon{
+	margin-left: 25vw;
+	margin-top: ;
+	display:flex;
+}
+
+.sicon{
+	padding-left: 15px;
+	position: absolute;
+	z-index: 5;
+} */
