@@ -80,12 +80,25 @@ nav ul {
     width: 45%;
     margin-right: -15px;
     transition: 0.15s;
-    opacity: 075;
+    opacity: 0.75;
 }
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
     opacity: 0.5;
 }	
+
+#appPocket {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    right: 0px;
+    width: 330px;
+    height: 601px;
+    margin-top: 57px;
+    margin-right: 4px;
+    border: black solid 1px;
+}
 
 nav ul li{
     display: inline-block;
