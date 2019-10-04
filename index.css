@@ -103,13 +103,13 @@ nav#header ul li #signIn {
     background-color: rgba(62, 129, 251);
     padding: 5px 10px;
     border-radius: 2px;
-    color: white;
+    color: black;
 }
 /* This is the sign in button change */
 #signIn:hover{
     filter: brightness(115%);
-    background-color: rgba(72, 133, 237, 0.865);
-    box-shadow: 0 0 5px 1px #4884eb;
+    background-color: rgba(124, 164, 235, 0.865);
+    box-shadow: 0 0 5px 1px #9e9494;
 }
 
 
