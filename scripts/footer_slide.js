@@ -9,3 +9,6 @@ const footer = document.querySelector(".js-footer");
     footer.classList.remove("slide");
   });
 });
+$('#filtersubmit').click(function() { 
+  alert('Searching for '+$('#filter').val());
+});
