@@ -56,6 +56,17 @@ input[type="submit"] {
     margin: 4px;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+#search:hover{
+    background-color: rgba(62, 129, 251);
+    color: white;
+}
+
+#lucky:hover{
+    background-color: rgba(15,157,88);
+    color: white;
 }
 
 small {
