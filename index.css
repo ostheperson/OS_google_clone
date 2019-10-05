@@ -1,160 +1,158 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: system-ui, BlinkMacSystemFont, Roboto, arial, sans-serif;
-    font-size: 12px;
+  font-family: system-ui, BlinkMacSystemFont, Roboto, arial, sans-serif;
+  font-size: 12px;
 }
 /*Google logo is a background image of a h1 block*/
 h1#logo {
-    height: 92px;
-    width: 272px;
-    background: url("images/googlelogo_color_272x92dp.png") top left no-repeat;
-    background-size: 100%;
-    margin:  0 auto;
+  height: 92px;
+  width: 272px;
+  background: url("images/googlelogo_color_272x92dp.png") top left no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
 }
 /*the container for the center contents*/
 #mainContainer {
-    width: 580px;
-    margin: 150px auto 0;
-    text-align: center;
+  width: 580px;
+  margin: 150px auto 0;
+  text-align: center;
 }
 
 /*search box I added an ID { "searchBox"  }*/
 input[type="text"] {
-    height: 44px;
-    border: 1px solid rgba(223, 225, 229);
-    font-size: 16px;
-    border-radius: 24px;
-    box-sizing: border-box;
-    width: 44px;
-    color: #444;
-    background-color: white;
-    margin: 25px 0 25px 0;
-    text-indent: 2.6em;
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-    transition: width .5s ease-in-out;
+  height: 44px;
+  border: 1px solid rgba(223, 225, 229);
+  font-size: 16px;
+  border-radius: 24px;
+  box-sizing: border-box;
+  width: 44px;
+  color: #444;
+  background-color: white;
+  margin: 25px 0 25px 0;
+  text-indent: 2.6em;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  transition: width 0.5s ease-in-out;
 }
 /*still refers to search box*/
 input[type="text"]:hover {
-	width: 584px;
+  width: 584px;
 }
 /*still refers to search box*/
 input[type="text"]:focus {
-	width: 584px;
+  width: 584px;
 }
 /*refers to google search button*/
 
 input[type="submit"] {
-    background-color: rgba(242, 242, 242);
-    padding: 10px 15px;
-    font-size: 13px;
-    border: none;
-    color: rgba(85, 89, 93);
-    margin: 4px;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: rgba(242, 242, 242);
+  padding: 10px 15px;
+  font-size: 13px;
+  border: none;
+  color: rgba(85, 89, 93);
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 small {
-    display: block;
-    margin: 20px 0 0;
-    font-size: 12px
+  display: block;
+  margin: 20px 0 0;
+  font-size: 12px;
 }
 
 nav#header {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-icon {
-    width: 45%;
-    margin-right: -15px;
-    transition: 0.15s;
+  width: 45%;
+  margin-right: -15px;
+  transition: 0.15s;
 }
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
-    opacity: 0.5;
-}	
+  opacity: 0.5;
+}
 
-nav ul li{
-    display: inline-block;
+nav ul li {
+  display: inline-block;
 }
 /* this changes the appearance of link when visited and not visited */
 nav#header ul li a:link,
 nav#header ul li a:visited {
-    color: #555;
-    text-decoration: none;
-    padding: 10px;
-    color: black;
-    font-size: 13px;
+  color: #555;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 13px;
 }
 /* sign-in button*/
 nav#header ul li #signIn {
-    background-color: rgba(62, 129, 251);
-    padding: 5px 10px;
-    border-radius: 2px;
-    color: white;
+  background-color: rgba(62, 129, 251);
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: white;
 }
 /* This is the sign in button change */
-#signIn:hover{
-    filter: brightness(115%);
-    background-color: rgba(72, 133, 237, 0.865);
-    box-shadow: 0 0 5px 1px #4884eb;
+#signIn:hover {
+  filter: brightness(115%);
+  background-color: rgba(72, 133, 237, 0.865);
+  box-shadow: 0 0 5px 1px #4884eb;
 }
-
 
 /* underlines links on pointer hover */
 nav#header ul li a:hover {
-    text-decoration: underline;
-    color: #333;
+  text-decoration: underline;
+  color: #333;
 }
 
 footer {
-    position: fixed;
-    bottom: -28px;
-    background-color: rgba(239, 239, 239);
-    padding: 12px 0;
-    width: 100%;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
+  position: fixed;
+  bottom: -28px;
+  background-color: rgba(239, 239, 239);
+  padding: 12px 0;
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-footer:hover, footer.slide {
-    transform: translateY(-28px);
+footer:hover,
+footer.slide {
+  transform: translateY(-28px);
 }
-
 footer nav {
-    padding: 0 12px;
+  padding: 0 12px;
 }
 
 footer nav ul li {
-    padding: 0 12px;
+  padding: 0 12px;
 }
 
-footer nav ul li a{
-    color: rgba(85, 89, 93);
-    text-decoration: none;
+footer nav ul li a {
+  color: rgba(85, 89, 93);
+  text-decoration: none;
 }
 
 footer nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer nav ul {
-    float: left;
+  float: left;
 }
 
 footer nav ul#rightLinks {
-    float: right;
+  float: right;
 }
-
