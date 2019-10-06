@@ -17,4 +17,6 @@ the issues tab. I'm sure I or some other interested potential contributor will w
 If there is any unclarity on any issue, be sure to comment on the issue ASAP. And I will respond ASAP.
 
 ------------------------------------------------------------------------------------------------------------------------
+I have set-up a github pages link for this repository https://os-the-person.github.io/OS_google_clone/
+
 Untill then Happy coding :)

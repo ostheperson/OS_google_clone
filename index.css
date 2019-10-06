@@ -87,13 +87,15 @@ nav ul {
 .app-icon {
     width: 45%;
     margin-right: -15px;
-    
 }
 
 .app-icon:hover {
   filter: blur(0.5px) grayscale(5%);
   opacity: 0.5;
+  transition: 0.15s;
+
 }
+/*this changes the opacity of icon with transition of 0.15s */
 
 nav ul li{
     display: inline-block;
@@ -114,6 +116,14 @@ nav#header ul li #signIn {
     border-radius: 2px;
     color: white;
 }
+/* This is the sign in button change */
+#signIn:hover{
+    filter: brightness(115%);
+    background-color: rgba(72, 133, 237, 0.865);
+    box-shadow: 0 0 5px 1px #4884eb;
+}
+
+
 /* underlines links on pointer hover */
 nav#header ul li a:hover {
     text-decoration: underline;
