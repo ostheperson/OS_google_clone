@@ -9,9 +9,9 @@ body {
 }
 /*Google logo is a background image of a h1 block*/
 h1#logo {
-    height: 92px;
+    height: 150px;
     width: 272px;
-    background: url("images/googlelogo_color_272x92dp.png") top left no-repeat;
+    background: url("images/source.gif") top left no-repeat;
     background-size: 100%;
     margin:  0 auto;
 }
@@ -107,8 +107,8 @@ nav#header ul li #signIn {
 }
 /* This is the sign in button change */
 #signIn:hover{
-    filter: brightness(115%);
-    background-color: rgba(72, 133, 237, 0.865);
+    filter: brightness(150%);
+    background-color: rgba(69, 117, 199, 0.836);
     box-shadow: 0 0 5px 1px #4884eb;
 }
 
@@ -156,5 +156,12 @@ footer nav ul {
 
 footer nav ul#rightLinks {
     float: right;
+}
+
+.linksTo {
+    padding: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
 }
 
