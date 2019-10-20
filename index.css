@@ -22,6 +22,11 @@ h1#logo {
     text-align: center;
 }
 
+.search-bar {
+    position: relative;
+    margin: 25px 0 25px 0;
+}
+
 /*search box I added an ID { "searchBox"  }*/
 input[type="text"] {
     height: 44px;
@@ -32,7 +37,6 @@ input[type="text"] {
     width: 44px;
     color: #444;
     background-color: white;
-    margin: 25px 0 25px 0;
     text-indent: 2.6em;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
     transition: width .5s ease-in-out;
@@ -43,8 +47,40 @@ input[type="text"]:hover {
 }
 /*still refers to search box*/
 input[type="text"]:focus {
-	width: 584px;
+    width: 584px;
+    outline: none;
 }
+
+/*Search box icon "Search"*/
+
+.search-bar-icons--search {
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* Search box icon "MIC" */
+
+.search-bar-icons--mic {
+    width: 25px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Icons animation */
+
+.icons-animated {
+    display: block;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
 /*refers to google search button*/
 
 input[type="submit"] {
