@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqsKtESS_GuXSQzYYz6_yVImQXlJNAooqykNrfGUBlNFt--Xh" type="image/x-icon" />
+    <!-- CDN for Material.io for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <!--Scripts-->
 </head>
-<body>
+<body class="normal">
     <nav id="header">
         <ul>
             <li><a href="https://www.google.com/intl/en/about/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
@@ -28,9 +31,15 @@
         <h1 id="logo"></h1>
         <form>
             <!--Search box-->
-            <input type='text' id="searchBox"> <br/>
+            <div id="searchBoxContainer"> 
+                <input type="text" id="searchBox" placeholder="Search Google or type a URL">
+            </div>
+
+            <!--<input type='text' class="searchBoxInput">-->
+             
+            <br/>
             <!-- google search button-->
-            <input type="submit" value="Google Search">
+            <input type="submit" value="Google Search" style="text-indent: 17px;" placeholder="Search Google or type or URL">
             <!--I'm Feeling Lucky button-->
             <input type="submit" value="I'm Feeling Lucky">
         </form> 
