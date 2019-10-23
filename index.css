@@ -22,29 +22,65 @@ h1#logo {
     text-align: center;
 }
 
-/*search box I added an ID { "searchBox"  }*/
-input[type="text"] {
-    height: 44px;
-    border: 1px solid rgba(223, 225, 229);
-    font-size: 16px;
-    border-radius: 24px;
-    box-sizing: border-box;
-    width: 44px;
-    color: #444;
-    background-color: white;
-    margin: 25px 0 25px 0;
-    text-indent: 2.6em;
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-    transition: width .5s ease-in-out;
+/* SearchBox */
+
+#searchBoxContainer {
+    margin: 0 auto 0 auto;
+    min-width: 410px;
+    width: var(--content-width);
 }
+
+input[type="text"] {
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    box-sizing: border-box;
+    cursor: text;
+    font-size: 16px;
+    height: 44px;
+    margin: 0 auto;
+    width: 44px;
+    max-width: 584px;
+    opacity: 1;
+    text-indent: 20px;
+    transition: width .5s ease-in-out;
+    background-image: url(images/search-24px.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input[type="text"]::placeholder {
+    visibility: hidden;
+}
+
 /*still refers to search box*/
 input[type="text"]:hover {
 	width: 584px;
+    background-position: 50% 50%;
+    background-image: url(images/search-24px.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    transition: width .5s ease-in-out;
+    text-indent: 20px;
 }
-/*still refers to search box*/
+input[type="text"]:hover::placeholder {
+    visibility: visible;
+    text-indent: 70px;
+    padding-left: 40px;
+}
+
 input[type="text"]:focus {
 	width: 584px;
+    padding-left: 40px;
+    background-image: url(images/search-24px.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    transition: width .5s ease-in-out;
 }
+
+input[type="text"]:focus::placeholder {
+    visibility: visible;
+}
+
 /*refers to google search button*/
 
 input[type="submit"] {
@@ -80,10 +116,11 @@ nav ul {
     width: 45%;
     margin-right: -15px;
     transition: 0.15s;
+    opacity: 0.5;
 }
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
-    opacity: 0.5;
+    opacity: 1;
 }	
 
 nav ul li{
