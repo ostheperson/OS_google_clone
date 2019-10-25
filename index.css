@@ -39,11 +39,14 @@ input[type="text"] {
 }
 /*still refers to search box*/
 input[type="text"]:hover {
-	width: 584px;
+    width: 584px;
 }
 /*still refers to search box*/
 input[type="text"]:focus {
-	width: 584px;
+    width: 584px;
+    outline: none;
+    transition: all .8s ease;
+    -webkit-transform: rotate(360deg); 
 }
 /*refers to google search button*/
 
@@ -108,8 +111,37 @@ nav#header ul li #signIn {
 /* This is the sign in button change */
 #signIn:hover{
     filter: brightness(115%);
-    background-color: rgba(72, 133, 237, 0.865);
-    box-shadow: 0 0 5px 1px #4884eb;
+    background-color: rgba(124, 164, 235, 0.865);
+    box-shadow: 0 0 5px 1px #9e9494;
+    transition: all .4s ease;
+}
+
+/*adds rotation to links*/
+
+#gmail:hover{
+    color: rgba(62, 129, 251);
+    transition: all .8s ease;
+    -webkit-transform: rotate(360deg);
+}
+#images:hover{
+    color: rgba(62, 129, 251);
+    transition: all .8s ease;
+    -webkit-transform: rotate(360deg);
+}
+#grid:hover{
+    color: rgba(62, 129, 251);
+    transition: all .8s ease;
+    -webkit-transform: rotate(360deg);
+}
+#about:hover{
+    color: rgba(62, 129, 251);
+    transition: all .8s ease;
+    -webkit-transform: rotate(360deg);
+}
+#store:hover{
+    color: rgba(62, 129, 251);
+    transition: all .8s ease;
+    -webkit-transform: rotate(360deg);
 }
 
 
