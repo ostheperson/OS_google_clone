@@ -51,11 +51,19 @@ input[type="submit"] {
     background-color: rgba(242, 242, 242);
     padding: 10px 15px;
     font-size: 13px;
-    border: none;
+    border: 1px solid rgb(242, 242, 242);
     color: rgba(85, 89, 93);
     margin: 4px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
 }
 
 small {
