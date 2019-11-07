@@ -37,13 +37,33 @@ input[type="text"] {
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
     transition: width .5s ease-in-out;
 }
+/*<div> encapsulating search box and search icon I added a class { "searchBar"  }*/
+.searchBar{
+		position: relative;
+}
+/*<img> search icon I added a class { "searchIcon"  } src in images directory*/
+.searchIcon{
+		position: absolute;
+		top:38px;
+		left:283px;
+}
 /*still refers to search box*/
 input[type="text"]:hover {
-	width: 584px;
+		width: 584px;
+}
+/*still refers to search icon inside searchbar*/
+input[type="text"]:hover + .searchIcon {
+		transition-delay: .35s;
+		left: 550px;
 }
 /*still refers to search box*/
 input[type="text"]:focus {
-	width: 584px;
+		width: 584px;
+}
+/*still refers to search icon inside searchbar*/
+input[type="text"]:focus + .searchIcon {
+		transition-delay: .35s;
+		left: 550px;
 }
 /*refers to google search button*/
 
@@ -84,7 +104,7 @@ nav ul {
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
     opacity: 0.5;
-}	
+}
 
 nav ul li{
     display: inline-block;
@@ -157,4 +177,3 @@ footer nav ul {
 footer nav ul#rightLinks {
     float: right;
 }
-
