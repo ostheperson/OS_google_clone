@@ -83,7 +83,7 @@ nav ul {
 }
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 nav ul li{
