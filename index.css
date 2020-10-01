@@ -84,7 +84,7 @@ nav ul {
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
     opacity: 0.5;
-}	
+}
 
 nav ul li{
     display: inline-block;
@@ -100,7 +100,7 @@ nav#header ul li a:visited {
 }
 /* sign-in button*/
 nav#header ul li #signIn {
-    background-color: rgba(62, 129, 251);
+    background-color: rgba(62, 129, 251, 1.0);
     padding: 5px 10px;
     border-radius: 2px;
     color: white;
@@ -157,4 +157,3 @@ footer nav ul {
 footer nav ul#rightLinks {
     float: right;
 }
-
