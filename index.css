@@ -29,6 +29,7 @@ h1#logo {
 
 /*search box I added an ID { "searchBox"  }*/
 input[type="text"] {
+    outline: none;
     height: 44px;
     border: 1px solid rgba(223, 225, 229);
     font-size: 16px;
