@@ -161,7 +161,7 @@ nav#header ul li a:hover {
 footer {
     position: fixed;
     bottom: -28px;
-    background-color: rgba(239, 239, 239);
+    background-color: rgb(41, 39, 39);
     padding: 12px 0;
     width: 100%;
     transition: transform 0.2s ease-in-out;
