@@ -6,7 +6,7 @@ This Project is aimed at taking a look on what the search page could look like i
 
 ------------------------------------------------------------------------------------------------------------------------
 
-So if you aare a beginner or intermediate web developer with a creative mind, by all means fork this project and 
+So if you are a beginner or intermediate web developer with a creative mind, by all means fork this project and 
 mod it till you love it, add it to your portfolio or something.
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -17,4 +17,6 @@ the issues tab. I'm sure I or some other interested potential contributor will w
 If there is any unclarity on any issue, be sure to comment on the issue ASAP. And I will respond ASAP.
 
 ------------------------------------------------------------------------------------------------------------------------
+I have set-up a github pages link for this repository https://os-the-person.github.io/OS_google_clone/
+
 Untill then Happy coding :)
