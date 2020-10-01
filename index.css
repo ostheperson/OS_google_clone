@@ -22,6 +22,11 @@ h1#logo {
     text-align: center;
 }
 
+.search-bar {
+    position: relative;
+    margin: 25px 0 25px 0;
+}
+
 /*search box I added an ID { "searchBox"  }*/
 input[type="text"] {
     height: 44px;
@@ -32,7 +37,6 @@ input[type="text"] {
     width: 44px;
     color: #444;
     background-color: white;
-    margin: 25px 0 25px 0;
     text-indent: 2.6em;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
     transition: width .5s ease-in-out;
@@ -43,8 +47,40 @@ input[type="text"]:hover {
 }
 /*still refers to search box*/
 input[type="text"]:focus {
-	width: 584px;
+    width: 584px;
+    outline: none;
 }
+
+/*Search box icon "Search"*/
+
+.search-bar-icons--search {
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* Search box icon "MIC" */
+
+.search-bar-icons--mic {
+    width: 25px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Icons animation */
+
+.icons-animated {
+    display: block;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
 /*refers to google search button*/
 
 input[type="submit"] {
@@ -83,8 +119,11 @@ nav ul {
 }
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
-    opacity: 0.5;
-}	
+    opacity: 0.6;
+    border-radius:50px;
+    box-shadow:0.2px 0.2px 10px grey;
+    cursor:pointer;
+}
 
 nav ul li{
     display: inline-block;
@@ -100,7 +139,7 @@ nav#header ul li a:visited {
 }
 /* sign-in button*/
 nav#header ul li #signIn {
-    background-color: rgba(62, 129, 251);
+    background-color: rgba(62, 129, 251, 1.0);
     padding: 5px 10px;
     border-radius: 2px;
     color: white;
@@ -156,33 +195,4 @@ footer nav ul {
 
 footer nav ul#rightLinks {
     float: right;
-}
-#filtersubmit {
-    position: relative;
-    z-index: 1;
-    left: -25px;
-    top: 1px;
-    color: #7B7B7B;
-    cursor:pointer;
-    width: 0;
-}
-
-.input-icons {
-    position: relative;
-}
-
-#filter {
-    width: 100%;
-}
-.input-icons:before {
-    content: "\f002";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    font-size: 18px;
-    padding-right: 0.5em;
-    position: absolute;
-    top: 36px;
-    left: 18px;
 }

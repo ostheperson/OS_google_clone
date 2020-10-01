@@ -6,7 +6,7 @@ This Project is aimed at taking a look on what the search page could look like i
 
 ------------------------------------------------------------------------------------------------------------------------
 
-So if you aare a beginner or intermediate web developer with a creative mind, by all means fork this project and 
+So if you are a beginner or intermediate web developer with a creative mind, by all means fork this project and 
 mod it till you love it, add it to your portfolio or something.
 
 ------------------------------------------------------------------------------------------------------------------------
