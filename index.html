@@ -6,7 +6,9 @@
     <!--Styles/Fonts-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqsKtESS_GuXSQzYYz6_yVImQXlJNAooqykNrfGUBlNFt--Xh" type="image/x-icon" />
     <!--Scripts-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
     <nav id="header">
@@ -34,11 +36,17 @@
         <h1 id="logo"></h1>
         <form>
             <!--Search box-->
-            <input type='text' id="searchBox"> <br/>
+            <div class="search-bar">
+                <svg class="search-bar-icons--search" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="gray" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <input type='text' id="searchBox"> <br/>
+                <img class="search-bar-icons--mic" src="images/googlemic_color_24dp.png" alt="">
+            </div>
             <!-- google search button-->
             <input type="submit" value="Google Search">
-            <!--I'm Feeling Lucky button-->
-            <input type="submit" value="I'm Feeling Lucky">
+            <!--Sucessfully done-->
+            <input type="submit" value="Sucessfully done">
         </form> 
         <small>Google.ca offered in <a href="">Fran&ccedil;ais</a></small>
     </div>
@@ -62,5 +70,5 @@
         </nav>
     </footer>
     <script src="./scripts/footer_slide.js"></script>
-    <script src="./scripts/app_pocket.js"></script>
+    <script src="./scripts/search_box_show_icons.js"></script>
 </body>
