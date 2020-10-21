@@ -5,6 +5,8 @@
     <title>OS Google Clone</title>
     <!--Styles/Fonts-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------google fonts link----->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Special Elite|Gilroy|Antony" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqsKtESS_GuXSQzYYz6_yVImQXlJNAooqykNrfGUBlNFt--Xh" type="image/x-icon" />
     <!--Scripts-->
@@ -15,12 +17,15 @@
         <ul>
             <li><a href="https://www.google.com/intl/en/about/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
             <li><a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042">Store</a></li>
+            <!-----added the toggle button --------->
+            <li class="button"><button class="btn-toggle">DARK MODE</button></li>
         </ul>
         <!--Unordered list of top-right links (gmail, images, and Apps)-->
         <ul>
             <li><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
             <li><a href="https://www.google.com.ng/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-            <li><img src="images/apps-icon.png" alt="Apps" class="app-icon" id="appPocketTrigger"></li>
+            <!-- <li><img src="images/apps-icon.png" alt="Apps" class="app-icon" id="appPocketTrigger"></li> -->
+            <li><img src="images/Apps_icon.svg" alt="Apps" class="app-icon" id="appPocketTrigger"></li>
             <li><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" id="signIn">Sign in</a></li>
         </ul>
 
@@ -74,4 +79,6 @@
     </footer>
     <script src="./scripts/footer_slide.js"></script>
     <script src="./scripts/search_box_show_icons.js"></script>
+    <script src="./scripts/dark_theme.js"></script>
 </body>
+</html>

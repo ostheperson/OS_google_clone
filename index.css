@@ -4,14 +4,28 @@
 }
 
 body {
-    font-family: system-ui, BlinkMacSystemFont, Roboto, arial, sans-serif;
+    /* font-family: system-ui, Special Elite, BlinkMacSystemFont, Roboto, arial, sans-serif; */
     font-size: 12px;
+
+}
+
+/* I added a class btn-toggle used to change the theme to dark mode */
+.btn-toggle{
+    background-color:#4b4a4afb;
+    width: 80px;
+    font-size: 10px;
+    padding-top: 1px;
+    font-weight: 900;
+    font-family: Raleway;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 /*Google logo is a background image of a h1 block*/
 h1#logo {
     height: 150px;
     width: 272px;
-    background: url("images/source.gif") top left no-repeat;
+    background: url("images/googlelogo_color_272x92dp.png") top left no-repeat;
     background-size: 100%;
     margin:  0 auto;
 }
@@ -20,6 +34,8 @@ h1#logo {
     width: 580px;
     margin: 150px auto 0;
     text-align: center;
+    font-family: Special Elite;
+    font-size: x-large;
 }
 
 .search-bar {
@@ -85,11 +101,13 @@ input[type="text"]:focus {
 /*refers to google search button*/
 
 input[type="submit"] {
-    background-color: rgba(242, 242, 242);
+    /* background-color: rgba(242, 242, 242); */
+    background-color: #444;
+    color: #fff;
     padding: 10px 15px;
     font-size: 13px;
     border: none;
-    color: rgba(85, 89, 93);
+     /* color: rgba(85, 89, 93);  */
     margin: 4px;
     border-radius: 4px;
     cursor: pointer;
@@ -97,6 +115,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+    /* background-color: #444;*/
+    color: #d7e916; 
     transform: scale(1.1);
 }
 
@@ -119,16 +139,19 @@ nav ul {
 }
 
 .app-icon {
-    width: 45%;
-    margin-right: -15px;
+    width: 25px;
+    margin-right: 20px;
+    margin-left: 10px;
     transition: 0.15s;
-    opacity: 0.75;
+    filter: brightness(100%);
 }
 /*this changes the opacity of icon with transition of 0.15s */
 .app-icon:hover {
-    opacity: 0.6;
-    border-radius:50px;
-    box-shadow:0.2px 0.2px 10px grey;
+/* this gives the rotation animation to app-icon when we hover it */
+    transition: transform 0.5s ease-in-out;
+    transform: rotateZ(180deg);
+     filter: brightness(100%); 
+    box-shadow:0.2px 0.2px 8px rgb(80, 79, 79);  
     cursor:pointer;
 }
 
@@ -151,11 +174,12 @@ nav ul li{
 /* this changes the appearance of link when visited and not visited */
 nav#header ul li a:link,
 nav#header ul li a:visited {
-    color: #555;
+    color: #40675f;   
     text-decoration: none;
     padding: 10px;
-    color: black;
-    font-size: 13px;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 600;
 }
 /* sign-in button*/
 nav#header ul li #signIn {
@@ -174,8 +198,8 @@ nav#header ul li #signIn {
 
 /* underlines links on pointer hover */
 nav#header ul li a:hover {
-    text-decoration: underline;
-    color: #333;
+    text-decoration: none;
+    color: #d7e916;
 }
 
 footer {
@@ -221,5 +245,26 @@ footer nav ul#rightLinks {
     padding: 50px;
     font-size: 15px;
     text-decoration: none;
-    color: #333;
+    color: #40675f;
+    font-family: Special Elite;
+}
+/* added this code which for dark-theme toggling */
+body{
+    background-color: #fff;
+    color: #222;
+}
+body.dark-theme {
+    background-color: #242323fb;
+    color: #eee;
+}
+@media(prefers-color-scheme: dark){
+    /* This sets default theme as Dark */
+    body{
+        background-color:#242323fb;
+        color:#eee;
+    }
+    body.light-theme{
+        background-color: #fff;
+        color: #222;
+    }
 }
